@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #FAF7F5;
+      color: #2D2424;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: #FF5E62;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2D2424;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #FF5E62;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px 20px;
+    }
+
+    .hero img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #FF8A65;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #8A7A75;
+      font-size: 16px;
+      max-width: 500px;
+      margin: 0 auto 24px auto;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #FF8A65, #FF5E62);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-left: 4px solid #FF5E62;
+      padding-left: 12px;
+    }
+
+    #about p {
+      color: #4A3F3B;
+      font-size: 15px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .skill-badge {
+      background: #FFE3D3;
+      color: #B84A2A;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .project-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #FF5E62;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #6B5C57;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    #contact a {
+      display: inline-block;
+      margin: 8px 12px;
+      color: #FF5E62;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #A69A96;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <img src="C:\Users\SHIVANSHU PANDEY\OneDrive\Pictures\Screenshots\Screenshot 2026-09-05 145722.png" alt="My Photo">
+    <h1>Hi, I'm Avani Tiwari 👋</h1>
+
+    <p>A beginner web developer learning HTML & CSS, building small projects one step at a time.</p>
+    <a href="#projects" class="btn">See my projects</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Avani, currently studying at Guru Tegh Bahadur 4th Centenary Engineering College affilated from GGSIPU . Right now I'm in my first year, learning the basics of programming (starting with HTML and I know basic about python also) alongside exploring web development through HTML and CSS. My goal is to get a government job , ideally a tech-related one , so I'm building skills in the tech worls space alongside my exam preparation. Outside of academics, I enjoy drawing , I am good at craetivity and I also love playing sports and listening to songs.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill-badge">HTML</span>
+      <span class="skill-badge">Learning CSS and JavaScript</span>
+      <span class="skill-badge">Basic PYTHON</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Wardrobe App (Welcome Screen)</h3>
+        <p>Designed the complete concept and user flow for a gender-inclusive outfit-suggestion app — including onboarding, a closet builder, occasion/weather-based suggestions, a rating system that learns preferences, and outfit planning calendar. Built the working prototype using AI-assisted coding (I know HTML; used AI tools for CSS/JavaScript not that much but used them to onmy style my website), while I led the product decisions, feature design, and testing.To open- <a href="C:\Users\SHIVANSHU PANDEY\Downloads\wardrobe-app (3) (1).html">Click here</a></p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My first web project — built with AI-assisted coding while I learn HTML and CSS. I reviewed and customized the code , and I'm learning to read and understand the code structure as I go.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon...</h3>
+        <p>More projects will be added here as I keep learning!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center; border:none;">Get In Touch</h2>
+    <p>Feel free to reach out!</p>
+    <a href="avanitiwari0704@gmail.com" title="avanitiwari0704@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/avani-tiwari-318256428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+    <a href="#">GitHub</a>
+  </section>
+
+  <footer>
+    Made with AI and my mind while learning web development
+  </footer>
+
+</body>
+</html>
